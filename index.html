@@ -16,7 +16,8 @@
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#experiencia">Experiencia Laboral</a></li>
                 <li><a href="#educacion">Educación</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#Info">Info</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -75,15 +76,40 @@
         </ul>
     </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
+    <section id="Info">
+        <h2>Info</h2>
         <p><strong>Teléfono:</strong> 2224500282</p>
         <p><strong>Email:</strong> <a href="mailto:liscortezz@gmil.com">liscortezz@gmail.com</a></p>
         <p><strong>Direccion:</strong> Alvarado 1850, Alejandro Korn, Buenos Aires, Argentina</p>
     </section>
 
-    
-    
+<section id="Contacto">
+    <h2>Formulario de Contacto</h2>
+    <form action="/enviar_formulario" method="post">
+        <!-- Campo de texto para el nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br><br>
+
+        <!-- Campo de email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Campo de número telefónico -->
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+        <br><br>
+
+        <!-- Campo de fecha -->
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required>
+        <br><br>
+
+        <!-- Botón para enviar el formulario -->
+        <button type="submit">Enviar</button>
+    </form>
+</section> 
     <script src="script.js"></script>
 </body>
 </html>
